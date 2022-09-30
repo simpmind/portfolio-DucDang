@@ -11,11 +11,11 @@
 
 - [x] Submit an updated LinkedIn profile
 
-1. [Updated Portfolio](https://ducdang.github.io/portfolio/)
+1. [Updated Portfolio](https://simpmind.github.io/portfolio-DucDang/)
 2. [GitHub Profile](https://github.com/simpmind)
 3. [Updated Resume]
 4. [Updated LinkedIn]
 
 
 
-[Portfolio Deployed Link](https://ducdang.github.io/portfolio/)
+[Portfolio Deployed Link](https://simpmind.github.io/portfolio-DucDang/)
