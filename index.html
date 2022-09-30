@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duc Dang a web developer student at UCSD bootcamp</title>
+
+    <!-- boostrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- need to ad flavicons -->
+
+    <!-- font awesome Icons in body -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+    <!-- linkedin stylesheet and github -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- my stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+
+</head>
+
+<body>
+    
+    <!-- nav bar styles with bootstrap -->
+    <!-- had to remove sticky-top it was covering the links clicked on -->
+    <nav class="navbar  navbar-expand-md navbar-light">
+        <a class="navbar-brand" id='ilios' href="#ilios">
+            <h2>ILIOS</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class='navbar-nav' style='font-size:1.5rem' ;>
+                <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#works">Works</a>
+                <a class="nav-item nav-link" href="#who-am-i">About</a>
+                <a class="nav-item nav-link"
+                    href=""
+                    target='_blank' >Resume'</a>
+                <a class="nav-item nav-link" href="#reach-out">Reach Out<i class="fas fa-mobile-alt"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- jumbotron for image -->
+    <div class="jumbotron"
+        style='background: url(assets/images/banner.jpg)no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;'>
+    </div>
+
+
+    <!-- main content with 2columns and 4rows -->
+    <div class=container id='main' style='background:var(--background-col);'>
+
+        <!-- profile pic and name -->
+        <div class='row'>
+            <div class="col-sm-4">
+                <img src="./assets/images/avatar.jpg" class='img-fluid rounded-circle' alt='greg profile pic'>
+            </div>
+            <div class='col-sm-8 display-4' style='color:var(--darkblue);'>Duc Dang</div>
+
+        </div>
+
+        <!-- 1st row with 2 columns about me -->
+        <div class="row">
+            <div class="col-sm-4 display-3" id= 'who-am-i'>Who am I</div>
+            <div class="col">
+                <p class='lead'>
+                    Light up the darkness! My brand Ilios is a searchlight for pragmatic development, design, and
+                    branding. In Greek Ilios means sun a metaphor for power, strength, and illuminating the unknown.
+                </p>
+
+                <p class='lead'>
+                    Hi my name is Duc Dang and I am a full stack developer. I quit my electrical engineering program and decide to be a web developer instead
+                    I am well versed in JavaScript, jQuery, HTML5 CSS3, Node.js. I am based out of the Philadelphia, PA.
+                    If you would like to learn more or want to discuss any upcoming projects<a href='#reach-out'><span class = "font-weight-bold font-italic" style ='color:var(--darkblue);'>reach out</span></a>at the bottom of the
+                    page or download my resume’.
+                </p>
+            </div>
+        </div>
+
+        <!-- 2nd row with left side column 'works' and right side column cards -->
+        <div class='row'>
+            <!-- left column 'works' -->
+            <div class='col-4 display-4' id='works'>Works</div>
+
+            <!-- wraps all 5 cards -->
+            <div class='col'>
+                <!--Big main card Golfers Plus-->
+                <div class="card" style='background: val(--linkcolor);'>
+                    <img src="./assets/images/petfinder.jpg" class='img-fluid' alt='Pet Finder'>
+                    <div class='card-img-overlay'>
+                        <h2 class='card-title text-center' style='color:var(--navbarcolor)'>
+                            <a href='https://github.com/MarioArmstrong/foreverOwnerFinder' target='_blank'>Pet Finder+
+                            </a>
+                            <p class = 'lead'> This application will connect owners with their future pets not strictly in their local areas. In addition, it will display directions to shelters.</p>
+                        </h2>
+
+                    </div>
+                </div>
+
+
+                <!-- 4 smaller cards-->
+                <div class="row">
+
+                    <!-- Team Profile Generator -->
+                    <div class="col-sm-6 my-3">
+                        <img src="./assets/images/image2.jpg" class='img-fluid' alt='calendar' />
+                        <div class='card-img-overlay'>
+                            <h5 class='card-title text-center'><a href='https://github.com/simpmind/Team-Profile-Generator'
+                                    target='_blank'>Team Profile Generator</a>
+                                    <p class = 'small'>A CLI app that takes employee information and renders a web page</p>
+                                </h5>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Backend of Ecommerce-->
+                    <div class="col-sm-6 my-3">
+                        <img src="./assets/images/landingpage.png" class='img-fluid' alt='credit card' />
+                        <div class='card-img-overlay'>
+                            <h5 class='card-title text-center'><a href='https://github.com/simpmind/HomeDeals'
+                                    target='_blank'>Ecommerce</a>
+                                <p class='small'>This project provide owners to post their properties in a place where potential buyers can look for them without the need of a third party (realtor).</p></h5>
+                        </div>
+                    </div>
+
+                   
+                     <!-- Tech Blog -->
+                     <div class="col-sm-6 my-3">
+                    <img src="./assets/images/blog.jpg" class='img-fluid' alt='typewriter'/>
+                        <div class='card-img-overlay'>
+                            <h5 class='card-title text-center'><a href='https://github.com/simpmind/techblog-cms'
+                                    target='_blank'>Tech Blog</a>
+                                <p class='small'>This is a CMS-style blog site similar to a Wordpress site</p></h5>
+                        </div>
+                    </div>
+                   
+                    
+                </div>
+            </div>
+        </div>
+        <!-- footer navbar 3rd row a column for the left and a column for the right-->
+        <!-- left column -->
+        <div class=row id ='contact-row'>
+            <div class="col-4 display-4" id='reach-out'>Reach Out</div>
+            <!-- right column -->
+            <div class="col-8 pr-0">
+                <nav class="navbar navbar-light" id='footer-navbar' style="background-color: var(--darkblue);">
+                    <!-- Navbar content -->
+                    <a class='nav-item'>267.957.6807</a>
+                    <a class='nav-item' href="mailto: tengfai97@gmail.com">Send Email</a>
+                    <a class='nav-item' href=https://github.com/simpmind target="_blank"><i
+                            class="fa fa-github fa-3x"></i></a>
+                    <a class='nav-item' href=https://www.linkedin.com/ target="_blank"><i
+                            class="fa fa-linkedin"></i></a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class='row justify-content-center'>
+        <div>Copyright Duc Dang</div>
+    </footer>
+
+
+
+    <!-- jquery slim -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <!-- bootstrap popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- my script -->
+    <script src='assets/js/script.js'></script>
+</body>
+
+</html>

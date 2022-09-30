@@ -1,0 +1,70 @@
+:root {
+  --darkestblue: rgba( 16, 62, 80,1);
+  --darkblue: rgba(39, 88,107,1);
+  --hoverblue: rgb(177, 215, 211);
+  --linkcolor:rgba(109,146,160,1);
+  --navbarcolor: rgb(235,235,235);
+  --background-col: rgba(182, 182, 182);
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+background-color: var(--darkestblue);
+}
+
+  .page{
+    max-width: 895px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .navbar{
+    background-color: var(--darkblue);
+    color: var(--navbarcolor);
+     /* border: 2px solid green; */
+   } 
+   
+ a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+    margin: 1.2rem;
+  
+}
+  #ilios:hover, a:hover{
+  color: var(--hoverblue);
+} 
+
+
+
+
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block; /* remove extra space below image */
+}
+ .card-title {
+   color: var(--navbarcolor);
+   background-color:var(--darkestblue);
+   opacity: .6;
+ }
+
+ /* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #who-am-i {
+display: none;
+  }
+  #works {
+    display: none;
+  }
+  #reach-out{
+    display: none;
+  }
+  #contact-row{
+    justify-content: center;
+    width: 100%;
+  }
+  button {
+    display: none;
+  }
+}

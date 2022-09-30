@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Shippori Mincho B1', serif;
+        }
+
+        .hero-image {
+            background-image: url("assets/images/base-wallpaper-sky.jpg");
+            background-color: #cccccc;
+            /* height: 500px; */
+            height: 100vh;
+
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 10vh;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(235, 235, 235);
+        }
+/* fade of brand name */
+        .hero-text {
+            color: skyblue;
+            animation-name: Brand;
+            animation-duration: 9s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+
+        }
+
+        @keyframes Brand {
+            0% {
+                color: rgb(223, 112, 1);
+            }
+
+            25% {
+                color: rgb(16, 180, 104);
+            }
+
+            50% {
+                color: rgb(223, 112, 1);
+            }
+
+            100% {
+                color: rgb(133, 221, 214);
+            }
+
+        }
+
+        #down {
+            position: absolute;
+            top: 89vh;
+            /* padding: 20px; */
+            font-size: 2rem;
+        }
+
+        #down:hover {
+            cursor: pointer;
+            background-color: rgb(9, 58, 55);
+            opacity: 0.8;
+        }
+
+        h2 {
+            opacity: 75%;
+            transition: opacity 0.8s
+        }
+
+        h2:hover {
+            opacity: 150%;
+            transition: opacity 0.3s
+        }
+
+        h2 {
+            color: #fff
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="font-size:50px">ILIOS</h1>
+            <h2>Pragmatic / Design / Branding</h2>
+            <span class='col text-center' id='down'>&#10597;</span>
+        </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- jquery for chevron -->
+    <script type="text/javascript">
+
+
+        $("#down").click(function () {
+            window.location.href = "index.html";
+        });
+
+    </script>
+
+</body>
+
+</html>
